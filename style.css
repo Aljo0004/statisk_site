@@ -2,30 +2,147 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  padding: 20px;
+}
 img {
   width: 100%;
   display: block;
   height: auto;
+  margin: 10px;
+}
+
+.logo {
+  width: 20%;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 30px;
+}
+.produkt_info {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-evenly;
 }
 
 .produktliste_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.text1 a {
+  text-decoration: none;
+  color: green;
+  cursor: default;
+}
+.text2 a {
+  text-decoration: none;
+  color: green;
+  cursor: default;
+}
+.text3 a {
+  text-decoration: none;
+  color: green;
+  cursor: default;
+}
+.discount {
+  background-color: yellow;
+  margin-right: 300px;
+}
+.reduced {
+  text-decoration: line-through;
 }
 
-a {
+.text4 a {
+  text-decoration: none;
+  color: red;
+  cursor: default;
+}
+
+.text1 p {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text1 h2 {
+  font-size: 20px;
+}
+
+.text2 p {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text2 h2 {
+  font-size: 20px;
+}
+
+.text3 p {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text3 h2 {
+  font-size: 20px;
+}
+
+.text4 p {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text4 h2 {
+  font-size: 20px;
+}
+
+.udsolgt {
+  opacity: 40%;
+}
+.grid_1-1 a {
   background-color: bisque;
   border: 1rem;
   border-radius: 20px;
-  margin: 10px;
-  padding: 20px;
   gap: 20px;
   text-decoration: none;
   color: #000000;
+  margin: 15px;
+  padding: 30px;
 }
 
 .produktliste_a {
   background-color: #ffffff;
+}
+
+.produkt_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 24px;
+}
+.produkt_container img {
+  width: 40%;
+}
+.summer25 {
+  background-color: lightgrey;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.summer25 h3 {
+  background-color: green;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
