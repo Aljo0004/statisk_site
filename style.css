@@ -16,12 +16,20 @@ img {
   width: 20%;
 }
 
-.grid_1-1 {
+ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   padding: 30px;
+  justify-content: center;
+}
+
+.grid_1-1 {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
+  /* text-align: center;
+  padding: 30px; */
 }
 .produkt_info {
   display: grid;
@@ -138,11 +146,58 @@ img {
   text-align: center;
 }
 
-.summer25 h3 {
-  background-color: green;
+.summer25 {
+  background-color: grey;
   border-radius: 20px;
   padding: 20px;
-  margin-top: 200px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.soldOut {
+  opacity: 50%;
+}
+
+.onSale {
+  background-color: blue;
+}
+
+.rabat {
+  position: absolute;
+  background-color: darkgreen;
+}
+
+.udsolgt {
+  position: absolute;
+  color: red;
+}
+
+.rabat {
+  color: #ffffff;
+}
+
+.produktside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.produktside img {
+  width: 90%;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 50;
+}
+
+.knap {
+  border-radius: 20px;
+  background-color: green;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
 }
