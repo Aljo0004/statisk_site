@@ -10,7 +10,9 @@ function showList(products) {
   let markup = "";
   products
     .map((product) => {
-      markup += `<article class="productz ${product.discount && "onSale"}  ${product.soldout && "soldOut"}"> 
+      markup += `
+     
+      <article class="productz  ${product.soldout && "soldOut"}"> 
 
             <a class="produktliste_a" href="produkt.html?id=${product.id}">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="1165">
@@ -18,7 +20,9 @@ function showList(products) {
             <div class="text1">
                 <h2>${product.productdisplayname}</h2>
                 <p>Pris: ${product.price}</p>
-                <p>Lagerstatus: <a href=""></a></p>
+${product.soldout ? `<p class="soldOutText">Udsolgt</p>` : product.discount ? `<p class="onSale">${product.discount}%</p>` : ""}
+           
+                
             </div>
             </article>`;
     })

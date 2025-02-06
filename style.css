@@ -154,26 +154,33 @@ ul {
   margin-right: 50px;
 }
 
-.soldOut {
+.soldOut img {
   opacity: 50%;
+}
+.soldOutText {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+
+  display: inline-block;
 }
 
 .onSale {
-  background-color: blue;
+  background-color: green;
+  color: white;
+  padding: 15px;
+  display: inline-block;
 }
 
 .rabat {
   position: absolute;
   background-color: darkgreen;
+  color: #ffffff;
 }
 
 .udsolgt {
   position: absolute;
   color: red;
-}
-
-.rabat {
-  color: #ffffff;
 }
 
 .produktside {
